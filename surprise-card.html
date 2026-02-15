@@ -3,26 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surprise Card</title>
+    <title>Sweet Surprise Card for Alif Asyraf</title>
     <style>
-        @keyframes laserLove {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #282c34;
-            color: white;
             font-family: Arial, sans-serif;
-            animation: laserLove 2s infinite;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+        .card {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        h2 {
+            color: #b0527e;
+        }
+        .animation {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('laser-love-animation.gif') no-repeat center;
+            background-size: cover;
+            opacity: 0.7;
+            pointer-events: none;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
         }
     </style>
 </head>
 <body>
-    <h1>Hi Alif Asyraf</h1>
+    <div class="card">
+        <div class="animation"></div>
+        <h2>Special Surprise for Alif Asyraf!</h2>
+        <p>🎉❤️ Wishing you a day filled with love and happiness! ❤️🎉</p>
+        <p>May your dreams come true! 🌹💞✨</p>
+        <p>Interactive elements coming soon! Stay tuned! 👀</p>
+    </div>
 </body>
 </html>
