@@ -3,43 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Surprise Card</title>
+    <title>Surprise Card</title>
     <style>
+        @keyframes laserLove {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        .card {
-            background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            text-align: center;
-            animation: pulse 1s infinite;
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        h1 {
-            color: #ff6b6b;
-        }
-        p {
-            color: #333;
+            background-color: #282c34;
+            color: white;
+            font-family: Arial, sans-serif;
+            animation: laserLove 2s infinite;
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>💖 Sweet Surprise! 💖</h1>
-        <p>Hey babe! Just wanted to remind you how much you mean to me! 🌹</p>
-        <p>You're my everything! 🥰</p>
-        <p>Can't wait to celebrate us! 🎉</p>
-    </div>
+    <h1>Hi Alif Asyraf</h1>
 </body>
 </html>
